@@ -1,0 +1,6 @@
+@media (max-width: 850px) {
+  .workbench { grid-template-columns: minmax(0, 1fr); min-width: 0; }
+  .workbench article { width: 100%; max-width: 100%; min-width: 0; overflow: hidden; }
+  .timeline-head h3 { overflow-wrap: anywhere; }
+  .details p { overflow-wrap: anywhere; }
+}
