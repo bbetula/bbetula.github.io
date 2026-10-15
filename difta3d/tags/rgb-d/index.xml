@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RGB-D | DIFTA-3D</title><link>https://bbetula.github.io/difta3d/tags/rgb-d/</link><atom:link href="https://bbetula.github.io/difta3d/tags/rgb-d/index.xml" rel="self" type="application/rss+xml"/><description>RGB-D</description><generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate><image><url>https://bbetula.github.io/difta3d/media/icon_hu_cd51c91342a84ed6.png</url><title>RGB-D</title><link>https://bbetula.github.io/difta3d/tags/rgb-d/</link></image><item><title>DIFTA-3D</title><link>https://bbetula.github.io/difta3d/projects/difta-3d/</link><pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><guid>https://bbetula.github.io/difta3d/projects/difta-3d/</guid><description>&lt;h2 id="the-idea"&gt;The idea&lt;/h2&gt;
+&lt;p&gt;DIFTA-3D replaces the task-specific visual branch of IIFNet3D with depth-consistent evidence from a frozen DINOv3 encoder. The geometric proposal path, RoI grid, and bidirectional fusion blocks remain in place.&lt;/p&gt;
+&lt;h2 id="three-stages"&gt;Three stages&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Project&lt;/strong&gt; each scene point into calibrated RGB and depth cameras.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Filter&lt;/strong&gt; samples whose camera-space depth disagrees with the observed depth image.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aggregate&lt;/strong&gt; accepted features inside proposal-aligned RoI grids before instance fusion.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&lt;figure &gt;
+&lt;div class="flex justify-center "&gt;
+&lt;div class="w-full" &gt;
+&lt;img alt="DIFTA-3D architecture"
+srcset="https://bbetula.github.io/difta3d/projects/difta-3d/method_hu_7aa6a788de2e06c8.webp 320w, https://bbetula.github.io/difta3d/projects/difta-3d/method_hu_c44eef8304354c01.webp 480w, https://bbetula.github.io/difta3d/projects/difta-3d/method_hu_abbaa87f0fc6d98c.webp 760w"
+sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px"
+src="https://bbetula.github.io/difta3d/projects/difta-3d/method_hu_7aa6a788de2e06c8.webp"
+width="760"
+height="456"
+loading="lazy" data-zoomable /&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id="results"&gt;Results&lt;/h2&gt;
+&lt;p&gt;On ScanNetV2, the DINOv3 control reaches 76.15
+and 60.93
+. Conservative VAID reaches 76.59 and 62.16 under the checkpoint-level recipe comparison.&lt;/p&gt;
+&lt;p&gt;The comparison is reported as a controlled transfer recipe. The external IIFNet3D reference uses a different visual branch and processing protocol.&lt;/p&gt;</description></item></channel></rss>
